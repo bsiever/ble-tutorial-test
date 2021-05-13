@@ -1,31 +1,23 @@
+# Getting started
 
-> Open this page at [https://bsiever.github.io/ble-tutorial-test/](https://bsiever.github.io/ble-tutorial-test/)
+## Introduction @unplugged
 
-## Use as Extension
+test bluetooth
 
-This repository can be added as an **extension** in MakeCode.
+## Step 1 @fullscreen
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/bsiever/ble-tutorial-test** and import
+test bluetooth
 
-## Edit this project ![Build status badge](https://github.com/bsiever/ble-tutorial-test/workflows/MakeCode/badge.svg)
+```blocks
+bluetooth.onBluetoothConnected(function () {
+    basic.showIcon(IconNames.Heart)
+})
+```
 
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/bsiever/ble-tutorial-test** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/bsiever/ble-tutorial-test/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
+```package
+bluetooth
+```
